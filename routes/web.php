@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', 'PagesController@home');
+//Route::get('/', 'PagesController@pages');
 
-Route::get('/acerca','PagesController@acercaNosotros');
+
+//Route::get('/',function(){
+//  return view('inicio');
+//});
+
+Route::get('/{page?}','PagesController@pages');

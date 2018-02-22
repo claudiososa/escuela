@@ -24,9 +24,10 @@
           <nav >
             <ul class="nav nav-pills">
               <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="/">Novedades</a></li>
+              <li class="nav-item"><a class="nav-link" href="autoridades">Autoridades</a></li>
+              <li class="nav-item"><a class="nav-link" href="noticias">Noticias</a></li>
               <li class="nav-item"><a class="nav-link" href="/">Campus</a></li>
-              <li class="nav-item"><a class="nav-link" href="/">Contacto</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacto">Contacto</a></li>
             </ul>
           </nav>
         </div>

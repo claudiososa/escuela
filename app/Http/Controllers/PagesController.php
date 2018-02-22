@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     //
-    public  function home()
+    /*public  function home()
     {
       $messages =
       [
@@ -36,7 +36,7 @@ class PagesController extends Controller
       /*$links =[
         'http://www.google.com.ar' =>'Buscador',
         'http://www.educar.ar' =>'Educar',
-      ];*/
+      ];
       //dd($messages);
         return view('welcome2',[
           //'messages' => []
@@ -44,10 +44,17 @@ class PagesController extends Controller
           //'links'=>$links,
           //'teacher'=>'Claudio Sosa'
         ]);
-    }
+    }*/
 
-    public function acercaNosotros()
+    public function pages($page=null)
     {
-      return view('acerca');
+      if ($page) {
+        return view($page);
+      }else{
+        return view('inicio');
+      }
+      //dd($page);
+
+
     }
 }

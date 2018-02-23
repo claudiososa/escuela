@@ -49,6 +49,37 @@ class PagesController extends Controller
     public function pages($page=null)
     {
       if ($page) {
+        switch ($page) {
+          case 'autoridades':
+            $plantel = [
+                            [
+                                'director'=>'Juan Diaz',
+                                'vicedirector'=>'Maria Julia',
+                                'secretario'=>'Julio Mamani'
+                              ]
+            ];
+            //dd($plantel);
+            return view($page,[
+              'autoridades'=>$plantel
+            ]);
+
+            break;
+          case 'contacto':
+            $contacto =[
+                          ['direccion'=>'Av. Hipolito Yrigoyen N 750',
+                           'email'=>'colegio5159@gmail.com',
+                           'telefono'=>'3874515455'
+                          ]
+            ];
+            return view($page,[
+              'contacto'=>$contacto
+            ]);
+            break;
+
+          default:
+            # code...
+            break;
+        }
         return view($page);
       }else{
         return view('inicio');

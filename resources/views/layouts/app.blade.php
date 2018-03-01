@@ -21,15 +21,18 @@
         </div>
 
         <div class="row">
-          <nav >
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="autoridades">Autoridades</a></li>
-              <li class="nav-item"><a class="nav-link" href="noticias">Noticias</a></li>
-              <li class="nav-item"><a class="nav-link" href="/">Campus</a></li>
-              <li class="nav-item"><a class="nav-link" href="contacto">Contacto</a></li>
-            </ul>
-          </nav>
+          @section('nav')            
+            <nav >
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="autoridades">Autoridades</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">Campus</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto">Contacto</a></li>
+              </ul>
+            </nav>
+          @show
+
         </div>
       </div>
 
@@ -53,6 +56,6 @@
             </div>
         </div>
         <script src="{{asset('js/jquery.min.js')}}"></script>
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>        
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
     </body>
 </html>

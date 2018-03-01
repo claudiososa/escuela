@@ -75,9 +75,14 @@ class PagesController extends Controller
               'contacto'=>$contacto
             ]);
             break;
+          case 'noticias':
+            return view($page,[
+              //'contacto'=>$contacto
+            ]);
+              break;
 
           default:
-            # code...
+            return view('inicio');
             break;
         }
         return view($page);
